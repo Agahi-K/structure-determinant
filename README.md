@@ -14,13 +14,14 @@ The application requires no installation, registration, or payment.
 
 STRUCTURE DETERMINANT provides the following functions:
 
-* Extraction of the number of genetic clusters (K) and estimated Ln probability of the data [LnP(D)] from STRUCTURE output files.
+* Extraction of the number of genetic clusters (K) and estimated log probability of the data [LnP(D)] from STRUCTURE output files.
 * Calculation and visualization of ΔK based on the Evanno method.
-* Summary of mean LnP(D) and its standard deviation across STRUCTURE replicates.
+* Calculation of mean LnP(D) and standard deviation across STRUCTURE replicates.
 * Extraction and visualization of individual membership coefficients (Q) from STRUCTURE Q-matrices.
 * Classification of genotypes as assigned to a genetic cluster or as admixed according to a user-defined membership threshold.
 * Generation of publication-ready Structure and admixture plots.
-* Export of summary tables and publication-quality PNG figures.
+* Export of summary tables in CSV format.
+* Export of publication-quality Structure and admixture plots in PNG format at 600 dpi.
 
 ## Input
 
@@ -41,11 +42,15 @@ The application uses the following R packages:
 
 ## Repository contents
 
-`app.R` contains the complete R/Shiny source code of STRUCTURE DETERMINANT v1.0.
+The repository contains the complete R/Shiny source code of STRUCTURE DETERMINANT v1.0:
+
+* `app.R` — complete source code of the web-based application.
 
 ## Reproducibility
 
-The complete source code used to implement the STRUCTURE DETERMINANT application is openly available in this repository. The online application provides direct access to the implemented analytical workflow without requiring local installation.
+The complete R/Shiny source code used to implement STRUCTURE DETERMINANT v1.0 is openly available in this repository. The code provides the analytical workflow implemented in the online application, including extraction of STRUCTURE output information, calculation of ΔK, visualization of population structure, and Q-matrix-based admixture assessment.
+
+The online application provides direct access to the implemented workflow without requiring local installation.
 
 ## Citation
 
